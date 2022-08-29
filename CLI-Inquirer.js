@@ -11,12 +11,12 @@ const questions = [
   },
   {
     type: 'input',
-    name: 'numer',
+    name: 'number',
     message: "Give me a number!",
   },
 ];
 
 inquirer.prompt(questions).then(answers => {
   console.log(`Hi ${answers.name}!`);
-  console.log(`Your number is ${answers.numer}`)
+  console.log(`Your number is ${answers.number}`)
 });
